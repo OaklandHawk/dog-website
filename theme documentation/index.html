@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Heelia - Documentation</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+     <div class="container">
+        <div class="row" style="position: relative;">
+            <div class="col-md-3" >
+                <div class="list-group table-of-contents">
+                    <a class="list-group-item" href="#html">Folder & HTML Structure</a>
+                    <a class="list-group-item" href="#css">CSS, Fonts & Javascripts</a>
+                    <a class="list-group-item" href="#contact-form">Contact Form</a>
+                    <a class="list-group-item" href="#credits">Credits</a>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="jumbotron" id="home">
+                    <div class="container">
+                        <h1>Heelia - Portfolio One Page HTML Template</h1>
+                    </div>
+                </div>
+
+                <div class="pt60" id="html">
+                    <h4>Folder & HTML Structure</h4>
+                    <p>Heelia is a fully Responsive and Clean, Personal One Page Template. Structure of your the template would look like following image.</p>
+                    <img src="images/folder-structure.png" alt="FOlder Structure">
+                    <ul class="mt20">
+                        <li>All .html files are in the root directory.</li>
+                        <li>Separete folders are created for .css, .js files & for images.</li>
+                        <li>All fonts other than web-fonts are located in fonts folder.</li>
+                    </ul>
+                    <h5 class="mt30">HTML Structure</h5>
+                    <p>This template is using Bootstrap framework. So, basic HTML structure is same as it is used in Bootstrap.</p>
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;!-- Bootstrap & Other CSS & files & Google Fonts Link --&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;navbar&gt;
+            &lt;!-- Home section --&gt;
+        &lt;/navbar&gt;
+        &lt;div&gt;
+            &lt;!-- About section --&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;!-- Service section --&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;!-- Contact section --&gt;
+        &lt;/div&gt;
+        &lt;!-- Bootstrap, jQuery & other js files --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                </div>
+
+                <div class="pt60" id="css">
+                    <h4>CSS, Fonts & Javascripts</h4>
+                    <p>Following css files must be included in your HTML file to make this theme work. Make sure path of the css folder is mentioned correctly.</p>
+                    <pre>
+&lt;!-- ========== Bootstrap & Other CSS Files ========== --&gt;
+&lt;link rel="stylesheet" href="css/bootstrap.min.css"&gt;
+&lt;link rel="stylesheet" href="css/font-awesome.min.css&gt;
+&lt;link rel="stylesheet" href="css/magnific-popup.css&gt;
+&lt;link rel="stylesheet" href="css/owl.theme.css&gt;
+&lt;link rel="stylesheet" href="css/owl.carousel.css&gt;
+
+&lt;!-- ========== Main Style CSS ========== --&gt;
+&lt;link rel="stylesheet" href="css/style.css"&gt;
+                    </pre>
+
+                    <h5 class="mt30">Fonts</h5>
+                    We have used 1 web fonts for text. 'Rubik' is used everywhere else. Following one lines of code fetch web fonts from Google.
+                    <pre>
+&lt;@import url('https://fonts.googleapis.com/css?family=Poppins:400,500');&gt;
+                    </pre>
+
+                    We have used font icons for wider variety of icons:
+                    <pre>
+&lt;link rel="stylesheet" href="css/font-awesome.min.css"&gt;
+                    </pre>
+
+                    <h5 class="mt30">Javascripts</h5>
+                    <p>Following js files are required to be added to your HTML page to make this theme work.</p>
+                    <pre>
+&lt;!-- ========== Other JS ========== --&gt;
+&lt;script src="js/jquery.js"&gt;&lt;/script&gt; &lt;!-- jQuery --&gt;
+&lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt; &lt;!-- Bootstrap min --&gt;
+&lt;script src="js/jquery.nav.js"&gt;&lt;/script&gt; &lt;!-- jQuery Nav --&gt;
+&lt;script src="js/jquery.parallax.js"&gt;&lt;/script&gt; &lt;!-- Parallax --&gt;
+&lt;script src="js/jquery.magnific-popup.min.js"&gt;&lt;/script&gt; &lt;!-- Magnific Popup --&gt;
+&lt;script src="js/magnific-popup-options.js"&gt;&lt;/script&gt; &lt;!-- Magnific Popup --&gt;
+&lt;script src="js/owl.carousel.min.js"&gt;&lt;/script&gt; &lt;!-- Owl Carousel --&gt;
+&lt;script src="js/smoothscroll.js"&gt;&lt;/script&gt; &lt;!-- Smoothscroll --&gt;
+&lt;!-- ========== Main js file ========== --&gt;
+&lt;script src="js/custom.js"&gt;&lt;/script&gt; &lt;!-- Main custom javascript file --&gt;
+                    </pre>
+                </div>
+
+                <div class="pt60" id="contact-form">
+                    <h4>Contact Form</h4>
+                    <p>Contact form will use php to send emails. So just open&nbsp;<strong>contact.php</strong>&nbsp;file. Change the current email <strong>youremailhere@gmail.com</strong> to your email address. Your form is ready.</p>
+                    <p>
+                        * Contact form require web server to send email. Emails can go to your spam/junk folder.
+                    </p>
+                    <p>
+                        * If you use custom email like &#121;&#111;&#117;&#114;&#110;&#97;&#109;&#101;&#64;&#121;&#111;&#117;&#114;&#99;&#111;&#109;&#112;&#97;&#110;&#121;&#46;&#99;&#111;&#109; then may be your mail client can block php mail completely. I recommend to use gmail or athor popular email address.&nbsp;
+                    </p>
+                    <p>
+                        * If you want perfect php mail system. please use&nbsp;<a href="https://github.com/PHPMailer/PHPMailer" target="_blank">https://github.com/PHPMailer/PHPMailer</a>
+                    </p>
+                    <img src="images/contact-form.png" alt="Contact Form">
+                </div>
+
+                <div class="pt60" id="credits">
+                    <h4>Credits</h4>
+                    <ul>
+                        <li>jQuery - <a href="http://jquery.com/" target="_blank">http://jquery.com/</a></li>
+                        <li>Bootstrap - <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a> </li>
+                        <li>FontAwesome - <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">http://fortawesome.github.io/Font-Awesome/</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
